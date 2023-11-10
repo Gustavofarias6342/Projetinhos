@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+        <div class="form" >
+            <div class="red3">
+                <p>FORMULÁRIO</p>
+                <p>CLIENTES</p>
+                <p>RESTAURANTES</p>
+                <img src="static/img/e9a44258-e55e-411e-a21e-789f50e94bc0.jpg" class="logodalogo" id="sub">
+            <form method="post">
+                {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class="flashes">
+            {% for message in messages %}
+            <li> {{ message }}</li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+            {% endwith %}
+        {% if erros | length>0 %}
+        <div class= "alert alert-info">
+        {% for e in erros %}
+        <p>{{ e }}</p>
+        {% endfor %}
+        </div>
+        {% endif %}
+            <div class="restaurante2">
+                <p for="exampleInputNome1">Nome: <input class="restaurante" type="text" name="nome"></p>
+            </div>
+            <div class="endereco2">
+                <p for="exampleInputEmail1">E-mail: <input class="endereco" type="text" name="email" ></p>
+            </div>
+            <div class="endereco2">
+                <p for="exampleInputSenha1">Senha: <input class="pass" type="password" name="senha" ></p>
+            </div>
+            <div class="endereco2">
+                <p for="exampleInputTelefone1">Telefone: <input class="pass" type="text" name="telefone" ></p>
+            </div>
+            <div class="restaurante2">
+                <p for="exampleInputCep1">Cep: <input class="cep" type="text" name="cep"></p>
+            </div>
+            <div class="endereco2">
+                <p for="exampleInputEstado1">Estado: <input class="estado" type="text" name="estado" ></p>
+            </div>
+            <div class="endereco2">
+                <p for="exampleInputCidade1">Cidade: <input class="cidade" type="text" name="cidade" ></p>
+            </div>
+            <div class="endereco2">
+                <p for="exampleInputfuncao1">Restaurante ou Cliente: <input class="funcao" type="text" name="funcao" ></p>
+            </div>
+            <div>
+                <a class="politica" href="static/pdf/politicadeprivacidade.pdf.pdf">Politica de privacidade</a>
+                <a class="uso" href="static/pdf/termosdeuso.pdf">termos de uso</a>
+            </div>
+        <div>
+            <button type="submit" class="botao">Enviar</button>
+        </div>
+        </form>
+    </div>
+    </div>
+{% endblock %}

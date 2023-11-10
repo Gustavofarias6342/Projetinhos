@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabores da roça</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main2.css') }}" />
+    <link href='https://fonts.googleapis.com/css?family=Eczar' rel='stylesheet'>
+    
+
+</head>
+<body>
+    <section>
+        
+    </section>
+
+    <a class="gotopbtn"  href="#"> 
+        <i class="fa-solid fa-up" >
+            <img src="static/img/6364349.png" class="seta">
+        </i>
+    </a>
+    <nav class="nav">
+        <img src="static/img/e9a44258-e55e-411e-a21e-789f50e94bc0.jpg" class="img-logo">
+        <div class="nav-list centralize">
+            <div class="nav-list-item">
+                <a href="{{url_for("index")}}">Ínicio</a>
+            </div>
+            <div class="nav-list-item">
+                <a href="#sobre">O festival</a>
+            </div>
+            <div class="nav-list-item">
+                <a href="#restaurantes">Restaurantes</a>
+            </div>
+
+            <div class="nav-list-item">
+                <a href="#patro">Patrocínio</a>
+            </div>
+            <div class="nav-list-item">
+                <a href="{{url_for("Inscricao.add")}}">Registrar-se</a>
+            </div>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+
+    <div class="finaly">
+        <img src="static/img/e9a44258-e55e-411e-a21e-789f50e94bc0.jpg" class="logofinal">
+        <div>
+            <a href="https://www.instagram.com/festivalsaboresdaroca_/"><img src="static/img/insta.png" class="insta"></a>
+            <h1 class="instatext">@festivalsaboresdaroca_</h1>
+            <a href="https://www.facebook.com/profile.php?id=100083107466660"><img src="static/img/face.png" class="face"></a>
+            <h1 class="facetext">Festivalsaboresdaroça</h1>
+            <div class="verticalw"></div>
+            <img class="panela1" src="static/img/panela.jpeg">
+        </div>
+    </div>
+</body>
+</html>

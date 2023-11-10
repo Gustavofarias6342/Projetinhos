@@ -378,63 +378,63 @@
   }
 
 .nome {
-  width: 615px;
+  width: 500px;
   margin-left: 10px;
 }
 
 .cidade {
-  width: 200px;
+  width: 500px;
 }
 
 .endereco {
-  width: 595px;
+  width: 500px;
   margin-left: 10px;
 }
 
 .restaurante {
-  width: 580px;
+  width: 500px;
   margin-left: 10px;
 }
 
 .estado {
-  width: 200px;
+  width: 500px;
 }
 
 .nome2 {
-  margin-left: 5%;
-  margin-top: 10px;
+  /* margin-left: 1%; */
+  /* margin-top: 10px; */
 }
 
 .restaurante2 {
-  margin-left: 5%;
-  margin-top: 10px;
+  /* margin-left: 1%;
+  margin-top: 10px; */
 }
 
 .endereco2 {
-  margin-left: 5%;
-  margin-top: 10px;
+  /* margin-left: 5%;
+  margin-top: 10px; */
 }
 
 .cidade2 {
-  margin-left: 5%;
-  margin-top: 10px;
+  /* margin-left: 5%; */
+  /* margin-top: 10px; */
 }
 
 .estado2 {
-  margin-left: 5%;
+  /* margin-left: 5%;
   margin-top: 10px; 
-  margin-left: 49%;
+  margin-left: 49%; */
 }
 
 .ce2 {
-  display: inline-flex;
-  margin-left: 4%;
+  /* display: inline-flex; */
+  /* margin-left: 4%; */
 }
 
 .red3 {
   margin-left: 100px;
   font-family: 'Eczar';
-  color: #fff;
+  color: #000000;
   font-size: x-large;
 }
 
@@ -615,3 +615,18 @@ color: #fff;
 
 }
 
+.botao {
+  margin-left: 45%;
+  font-size: large;
+  margin-top: 25px;
+}
+
+.uso {
+  font-size: small;
+  color: blue;
+}
+
+.politica {
+  font-size: small;
+  color: blue;
+}
